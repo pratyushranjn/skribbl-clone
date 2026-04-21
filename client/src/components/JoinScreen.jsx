@@ -1,4 +1,4 @@
-function JoinScreen({ name, room, rounds, wordCount, drawTime, onNameChange, onRoomChange, onRoundsChange, onWordCountChange, onDrawTimeChange, onJoin }) {
+function JoinScreen({ name, room, rounds, drawTime, onNameChange, onRoomChange, onRoundsChange, onDrawTimeChange, onJoin }) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-cyan-100 via-slate-100 to-amber-100 p-4">
       <div className="flex w-full max-w-sm flex-col gap-3 rounded-2xl border border-white/60 bg-white/90 p-6 shadow-xl backdrop-blur">
@@ -19,19 +19,10 @@ function JoinScreen({ name, room, rounds, wordCount, drawTime, onNameChange, onR
         />
 
         <div className="grid grid-cols-2 gap-2">
+      
           <input
             type="number"
-            min="2"
-            max="10"
-            value={rounds}
-            onChange={(e) => onRoundsChange(e.target.value)}
-            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-700 focus:outline-none focus:ring-2 focus:ring-cyan-400"
-            placeholder="Rounds"
-          />
-
-          <input
-            type="number"
-            min="120"
+            min="60"
             max="240"
             value={drawTime}
             onChange={(e) => onDrawTimeChange(e.target.value)}

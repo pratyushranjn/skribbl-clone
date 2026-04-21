@@ -169,7 +169,8 @@ module.exports = (server) => {
           return;
         }
         
-        room.currentDrawerIndex = (room.currentDrawerIndex + 1) % room.players.length;
+        if (!room.players.length) return; // Prevent crash if no players
+        room.currentDrawerIndex = room.currentDrawerIndex % room.players.length;
         room.correctGuessers = [];
         room.word = "";
         io.to(room.players[room.currentDrawerIndex].id).emit("choose_word", {

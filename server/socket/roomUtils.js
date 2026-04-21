@@ -22,7 +22,7 @@ const createRoomSettings = (input = {}) => {
   return {
     rounds: Number.isFinite(rounds) ? Math.min(Math.max(rounds, 2), 10) : 5,
     wordCount: Number.isFinite(wordCount) ? Math.min(Math.max(wordCount, 1), 5) : 3,
-    drawTime: Number.isFinite(drawTime) ? Math.min(Math.max(drawTime, 120), 240) : 120,
+    drawTime: Number.isFinite(drawTime) ? Math.min(Math.max(drawTime, 60), 240) : 60,
     maxPlayers: Number.isFinite(maxPlayers) ? Math.min(Math.max(maxPlayers, 2), 20) : 8,
     hints: Number.isFinite(hints) ? Math.min(Math.max(hints, 0), 5) : 2,
     isPrivate: typeof input.isPrivate === "boolean" ? input.isPrivate : true,
