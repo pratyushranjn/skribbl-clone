@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://pratyush-skribbl-clone.vercel.app"
+        "https://pratyush-skribbl-clone.vercel.app",
     ],
 }))
 
