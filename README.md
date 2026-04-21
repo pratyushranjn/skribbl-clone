@@ -4,6 +4,18 @@ A simple skribbl.io-style multiplayer drawing game built with React, Node.js, Ex
 
 Players join the same room, one player draws a word, and the others guess it in real time. Correct guesses give points, and the highest score wins.
 
+---
+
+## Live Demo
+
+You can try the live version of the game here:
+
+- [Frontend (Play Now)](https://pratyush-skribbl-clone.vercel.app)
+- [Backend API](https://pratyush-skribbl-clone.onrender.com)
+- [GitHub Repository](https://github.com/pratyushranjn/skribbl-clone)
+
+---
+
 ## Tech Stack
 
 - Frontend: React + Vite + Tailwind CSS
