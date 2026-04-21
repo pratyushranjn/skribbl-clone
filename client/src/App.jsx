@@ -16,7 +16,7 @@ function App() {
   });
   const [rounds, setRounds] = useState(5);
   const [wordCount, setWordCount] = useState(3);
-  const [drawTime, setDrawTime] = useState(60);
+  const [drawTime, setDrawTime] = useState(120);
   const [maxPlayers, setMaxPlayers] = useState(8);
   const [hints, setHints] = useState(2);
   const [isPrivate, setIsPrivate] = useState(true);
